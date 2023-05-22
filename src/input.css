@@ -47,7 +47,7 @@
         @apply origin-center -translate-y-[.4rem] rotate-[-45deg] transition-all;
     }
     .header__actions{
-        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[9rem];
+        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[15rem];
     }
     .header__actions.open{
         @apply max-h-[50rem] transition-all duration-500 ease-in ;
@@ -65,7 +65,7 @@
         @apply bg-primary px-[1rem] py-[.5rem] rounded-full text-[1.5rem] font-semibold text-white inline-block w-full text-center hover:scale-[1.05] transition-all;
     }
     .header__download{
-        @apply mx-[1.5rem] my-[3rem] lg:my-1 lg:mx-0;
+        @apply mx-[1.5rem] my-[3rem] lg:my-1 lg:mx-auto lg:w-[9rem];
     }
 
 

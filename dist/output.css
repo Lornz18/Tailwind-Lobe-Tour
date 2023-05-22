@@ -704,7 +704,7 @@ video {
     position: relative;
     top: 0px;
     max-height: 50rem;
-    width: 9rem;
+    width: 15rem;
     background-color: transparent;
   }
 }
@@ -773,8 +773,9 @@ video {
   .header__download {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9rem;
   }
 }
 
