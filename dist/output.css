@@ -852,6 +852,8 @@ video {
 
 .banner__download {
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .banner__download a {
@@ -963,6 +965,12 @@ video {
   font-weight: 600;
 }
 
+@media (min-width: 1024px) {
+  .footer__links__item h4 {
+    cursor: default;
+  }
+}
+
 .footer__links__item h4 i {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1065,8 +1073,220 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+/* ---------------HELP--------------- */
+
+.links__text {
+  text-align: center;
+}
+
+.links__text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.links__text h1 span {
+  --tw-text-opacity: 1;
+  color: rgb(4 221 178 / var(--tw-text-opacity));
+}
+
+.links__text p {
+  font-size: 1.4rem;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.links__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.links__scroll {
+  position: relative;
+  display: none;
+  height: 25rem;
+  width: 12rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .links__scroll {
+    display: block;
+  }
+}
+
+.links__scroll.sticky ul {
+  position: fixed;
+  top: 0px;
+}
+
+.links__scroll ul {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  width: 10rem;
+}
+
+.links__scroll ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.faq__nav__link.active {
+  border-radius: .4rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 221 178 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.faq__content {
+  display: none;
+}
+
+.faq__content.active {
+  display: block;
+}
+
+.links__scroll ul li a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .links__content {
+    width: 40rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+.links__item {
+  border-bottom-width: .1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .links__item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-bottom: 2.5rem;
+    padding-top: 1.25rem;
+  }
+}
+
+.links__item h4 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.links__item h4 i {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.links__item h4 i.active {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.links__item ul {
+  max-height: 0px;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.links__item ul.active {
+  max-height: 60rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.links__item ul li {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.links__item ul li a {
+  text-decoration-line: underline;
+}
+
+.links__item ul li a:hover {
+  font-weight: 600;
+}
+
+.links__item ul li p span {
+  font-weight: 700;
+}
+
+.links__item ul li h5 {
+  font-weight: 700;
+}
+
+.links__download {
+  border-bottom-width: 2px;
+  padding-bottom: 2.5rem;
+  padding-top: 8rem;
+}
+
+.links__download h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.visible {
+  visibility: visible;
+}
+
+.sticky {
+  position: sticky;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .container {

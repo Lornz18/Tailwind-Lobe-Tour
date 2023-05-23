@@ -88,7 +88,7 @@
         @apply rounded-[1.5rem] my-10 mx-auto lg:w-[70rem] hover:scale-105 hover:drop-shadow-2xl transition-all duration-500;
     }
     .banner__download{
-        @apply mt-10;
+        @apply mt-10 flex justify-center;
     }
     .banner__download a{
         @apply font-semibold bg-primary py-2 px-5 rounded-full text-light text-[1.5rem] inline-block hover:scale-110 transition-all lg:text-[1.5rem];
@@ -110,7 +110,7 @@
         @apply block lg:grid lg:grid-cols-4;
     }
     .footer__links__item h4{
-        @apply text-[1.2rem] font-semibold mb-2 cursor-pointer flex justify-between;
+        @apply text-[1.2rem] font-semibold mb-2 cursor-pointer flex justify-between lg:cursor-default;
     }
     .footer__links__item h4 i{
         @apply transition-all lg:hidden;
@@ -132,5 +132,85 @@
     }
     .footer__icons a{
         @apply text-[1.4rem] mx-2 bg-primary rounded-[50%] leading-[3rem] w-[3rem] h-[3rem] pl-[.75rem] text-light inline-block hover:scale-110 transition-all; 
+    }
+
+    /* ---------------HELP--------------- */
+    .links__text{
+        @apply text-center;
+    }
+    .links__text h1{
+        @apply text-[2.5rem] font-bold text-dark;
+    }
+    .links__text h1 span{
+        @apply text-primary;
+    }
+    .links__text p{
+        @apply text-[1.4rem] text-dark;
+    }
+    .links__wrapper{
+        @apply py-[3rem] flex justify-center mx-auto gap-[5rem];
+    }
+    .links__scroll{
+        @apply py-5 hidden w-[12rem] h-[25rem] relative lg:block; 
+    }
+    .links__scroll.sticky ul{
+        @apply fixed top-0;
+    }
+    .links__scroll ul{
+        @apply mx-5 w-[10rem];
+    }
+    .links__scroll ul li{
+        @apply my-2 py-1;
+    }
+    .faq__nav__link.active{
+        @apply bg-primary rounded-[.4rem] text-light;
+    }
+    .faq__content{
+        @apply hidden;
+    }
+    .faq__content.active{
+        @apply block;
+    }
+    .links__scroll ul li a{
+        @apply text-[1.2rem] font-semibold px-2;
+    }
+    .links__content{
+        @apply lg:w-[40rem] lg:py-3 ;
+    }
+    .links__item{
+        @apply border-b-[.1rem] py-10 lg:py-0 lg:pb-10 lg:pt-5;
+    }
+    .links__item h4{
+        @apply flex justify-between text-[1.2rem] font-bold text-dark;
+    }
+    .links__item h4 i{
+        @apply transition-all duration-700;
+    }
+    .links__item h4 i.active{
+        @apply rotate-180 transition-all duration-700;
+    }
+    .links__item ul{
+        @apply max-h-0 overflow-hidden transition-all;
+    }
+    .links__item ul.active{
+        @apply max-h-[60rem] transition-all duration-700;
+    }
+    .links__item ul li{
+        @apply py-5 flex items-start; 
+    }
+    .links__item ul li a{
+        @apply underline hover:font-semibold;
+    }
+    .links__item ul li p span{
+        @apply font-bold;
+    }
+    .links__item ul li h5{
+        @apply font-bold;
+    }
+    .links__download{
+        @apply border-b-2 pb-10 pt-[8rem];
+    }
+    .links__download h1{
+        @apply text-[3rem] font-bold text-dark text-center;
     }
 }
