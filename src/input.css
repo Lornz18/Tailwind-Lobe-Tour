@@ -47,7 +47,7 @@
         @apply origin-center -translate-y-[.4rem] rotate-[-45deg] transition-all;
     }
     .header__actions{
-        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[15rem];
+        @apply absolute top-[6.05rem] backdrop-blur-sm bg-gray-50 bg-opacity-80  w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[10rem];
     }
     .header__actions.open{
         @apply max-h-[50rem] transition-all duration-500 ease-in ;
@@ -65,7 +65,7 @@
         @apply bg-primary px-[1rem] py-[.5rem] rounded-full text-[1.5rem] font-semibold text-white inline-block w-full text-center hover:scale-[1.05] transition-all;
     }
     .header__download{
-        @apply mx-[1.5rem] my-[3rem] lg:my-1 lg:mx-auto lg:w-[9rem];
+        @apply mx-[1.5rem] my-[3rem] lg:my-1 lg:mx-1 lg:w-[9rem];
     }
 
 
@@ -212,5 +212,88 @@
     }
     .links__download h1{
         @apply text-[3rem] font-bold text-dark text-center;
+    }
+
+
+    /* ---------------------------------------- */
+    .example__top{
+        @apply text-center;
+    }
+    .example__top h1{
+        @apply text-[3rem] font-bold;
+    }
+    .example__top h1 span{
+        @apply text-primary;
+    }
+    .example__top p{
+        @apply text-[1.35rem];
+    }
+    .example__content{
+        @apply flex flex-wrap justify-center lg:gap-5;
+    }
+    .example__content__card{
+        @apply rounded-[1rem] shadow-2xl m-5 lg:w-[35rem];
+    }
+    .example__content__card video{
+        @apply rounded-t-2xl;
+    }
+    .example__content__text{
+        @apply px-5 py-10;
+    }
+    .example__content__text h3{
+        @apply text-[1.5rem] font-bold lg:text-[2rem];
+    }
+    .example__content__text p{
+        @apply lg:text-[1.3rem];
+    }
+    .example__bottom{
+        @apply text-center my-10;
+    }
+    .example__bottom h1{
+        @apply text-[3rem] font-bold w-[25rem] mx-auto;
+    }
+    .example__bottom a{
+        @apply text-[1.5rem] bg-primary text-light py-2 px-5 rounded-full font-semibold inline-block hover:scale-110 transition-all;
+    }
+
+    /* ----------------------------BLOG------------------------------ */
+    .blog__top{
+        @apply text-center;
+    }
+    .blog__top h1{
+        @apply text-[3rem] font-bold;
+    }
+    .blog__top h1 span{
+        @apply text-primary;
+    }
+    .blog__top p{
+        @apply text-[1.35rem];
+    }
+    .blog__content{
+        @apply flex flex-wrap justify-center lg:gap-5;
+    }
+    .blog__content__card{
+        @apply cursor-pointer rounded-[1rem] shadow-2xl m-5 lg:w-[35rem] hover:scale-105 transition-all;
+    }
+    .blog__content__card img{
+        @apply rounded-t-2xl;
+    }
+    .blog__content__text{
+        @apply px-5 pt-10;
+    }
+    .blog__content__text h3{
+        @apply text-[1.5rem] font-bold lg:text-[1.6rem];
+    }
+    .blog__content__text p{
+        @apply lg:text-[1.3rem];
+    }
+    .blog__bottom{
+        @apply text-center my-10;
+    }
+    .blog__bottom h1{
+        @apply text-[3rem] font-bold w-[25rem] mx-auto;
+    }
+    .blog__bottom a{
+        @apply text-[1.5rem] bg-primary text-light py-2 px-5 rounded-full font-semibold inline-block hover:scale-110 transition-all;
     }
 }
